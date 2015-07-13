@@ -12,7 +12,7 @@ exit_on_error()
     exit $NUM
 }
 
-# Test for a binary using type
+# Test for a binary using the type builtin
 test_binary()
 {
     type $1 >/dev/null 2>&1
