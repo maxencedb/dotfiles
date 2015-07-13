@@ -3,6 +3,7 @@
 # Global variables
 ROOT_PATH=$(dirname "$(readlink -f "$0")")
 SCRIPT_PATH=$ROOT_PATH/scripts
+FILE_PATH=$ROOT_PATH/files
 
 # Source shell tools
 source $ROOT_PATH/tools.sh
