@@ -13,7 +13,7 @@ done
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # Add a custom plugin to zshrc for aliases
-cat << EOF
+cat -  > $HOME/.oh-my-zsh/custom/safe.zsh << 'EOF'
 # Variables
 export EDITOR="vim"
 
@@ -27,4 +27,5 @@ function dush()
   echo $SIZES | grep -E '^[0-9.]+K' | sort -nr &&
   echo $SIZES | grep -E '^[0-9.]+[[:space:]]' | sort -nr
 }
-EOF > $HOME/.oh-my-zsh/custom/safe.zsh
+EOF
+
