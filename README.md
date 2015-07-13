@@ -8,5 +8,5 @@ contains a simple shell script to install them.
 
 ## Motivation
 I have been continuousely nagged by friends telling me I should do this for
-my sake. And know I have crashed my linux, I understand why.
+my sake. And now that I have crashed my linux, I understand why.
 
