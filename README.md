@@ -10,3 +10,8 @@ contains a simple shell script to install them.
 I have been continuousely nagged by friends telling me I should do this for
 my sake. And now that I have crashed my linux, I understand why.
 
+## Installation
+When running install.sh, all scripts in the scripts directory are called. They
+each handle the configs of one program. Mostly, this is just softlinking to the
+"files" directory
+
