@@ -6,7 +6,7 @@
 # make the i3 directory
 mkdir -p "$HOME/.i3"
 
-# copy necessary files
-cp "$FILE_PATH/i3config" "$HOME/.i3/config"
-cp "$FILE_PATH/i3status.conf" "$HOME/.i3status.conf"
+# Link necessary files
+ln -s "$FILE_PATH/i3config" "$HOME/.i3/config"
+ln -s "$FILE_PATH/i3status.conf" "$HOME/.i3status.conf"
 
