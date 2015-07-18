@@ -1,0 +1,7 @@
+rxvt*modifier: alt
+
+xterm*background: #121212 
+xterm*foreground: #E8E6E6
+xterm*eightBitInput: false
+xterm*metaSendsEscape: true
+
