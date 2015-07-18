@@ -1,0 +1,7 @@
+# load resources
+xrdb ~/.Xresources
+
+# disable pesky bell
+xset -b
+
+
