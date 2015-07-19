@@ -7,6 +7,10 @@ ZSH_THEME="bira"
 # Variables
 export EDITOR="vim"
 
+# Alias
+alias sl="ls"
+alias suod="sudo"
+
 # Functions
 function dush()
 {
