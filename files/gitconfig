@@ -1,0 +1,15 @@
+[user]
+  email = maxence.debergeyck@gmail.com
+  name = Maxence de Bergeyck
+[alias]
+  st = status
+  all = log --graph --pretty=format:'\t%C(yellow)%h%Creset %C(cyan)%<|(27)%aN%Creset%s %C(auto)%d%Creset'
+
+[color]
+  ui = true
+[log]
+  decorate = full
+[help]
+  autocorrect = 0
+[push]
+  default = simple
