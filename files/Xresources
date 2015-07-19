@@ -61,9 +61,9 @@ URxvt*scrollBar:                      false
 ! URxvt*scrollTtyKeypress:              boolean
 ! URxvt*scrollWithBuffer:               boolean
 ! URxvt*inheritPixmap:                  boolean
-! URxvt*transparent:                    boolean
+URxvt*transparent:                    true
 ! URxvt*tintColor:                      color
-! URxvt*shading:                        number
+URxvt*shading:                        20
 ! URxvt*blurRadius:                     HxV
 ! URxvt*fading:                         number
 ! URxvt*fadeColor:                      color
