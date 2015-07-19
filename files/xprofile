@@ -4,4 +4,6 @@ xrdb ~/.Xresources
 # disable pesky bell
 xset -b
 
+# set background
+feh --bg-scale ~/img/wall.png
 
