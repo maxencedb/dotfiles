@@ -159,7 +159,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # "Back to work"
-bindsym $mod+g exec "killall -s SIGKILL mplayer; killall -s SIGKILL vlc; killall -s SIGKILL chromium; killall -s SIGKILL firefox; killall -s SIGKILL tor-browser-en; killall -s SIGKILL mirage; /home/max/bin/jasmiff"
+bindsym $mod+g exec "killall -s SIGKILL mpv; killall -s SIGKILL vlc; killall -s SIGKILL chromium; killall -s SIGKILL firefox; killall -s SIGKILL tor-browser-en; killall -s SIGKILL mirage; /home/max/bin/jasmiff"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
