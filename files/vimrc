@@ -109,6 +109,9 @@ endif
 " For VimLatex : Force grep to show filenames
 set grepprg=grep\ -nH\ $*
 
+" Fix the é bug
+imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
+
 " If you prefer the Omni-Completion tip window to close when a selection is
 " " made, these lines close it on movement in insert mode or when leaving
 " " insert mode
