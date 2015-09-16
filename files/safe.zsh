@@ -6,10 +6,12 @@ ZSH_THEME="bira"
 
 # Variables
 export EDITOR="vim"
+export PATH="${HOME}/bin:${PATH}"
 
 # Alias
 alias sl="ls"
 alias suod="sudo"
+alias poi="poweroff"
 
 # Functions
 function dush()
