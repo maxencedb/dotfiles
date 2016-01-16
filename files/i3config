@@ -137,9 +137,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 #bindsym $mod+w exec "i3lock -u -c 000000 -i ~/img/lock.png" 
 bindsym $mod+w exec "i3lock -i screen.png"
 bindsym $mod+t exec i3-sensible-terminal
-# start chrome
-bindsym $mod+c exec "chromium"
-bindsym $mod+x exec "chromium -incognito"
+# start firefox
+bindsym $mod+c exec "firefox"
+bindsym $mod+x exec "firefox -private-window"
 # take screenshot (does not work)
 # bindsym --release $mod+less exec --no-startup-id import /tmp/latest-screenshot.png
 bindsym $mod+p exec "amixer -c 0 set Master 10+"
