@@ -2,7 +2,8 @@
 # zsh shell. So no poweroff aliases
 
 # Force theme
-ZSH_THEME="bira"
+ZSH_THEME="cypher-with-git"
+#ZSH_THEME="bira"
 
 # Variables
 export EDITOR="vim"
@@ -14,12 +15,23 @@ alias suod="sudo"
 alias poi="poweroff"
 
 # Functions
-function dush()
+function ms()
 {
-  SIZES=$(du -sh *) &&
-  echo $SIZES | grep -E '^[0-9.]+T' | sort -nr &&
-  echo $SIZES | grep -E '^[0-9.]+G' | sort -nr &&
-  echo $SIZES | grep -E '^[0-9.]+M' | sort -nr &&
-  echo $SIZES | grep -E '^[0-9.]+K' | sort -nr &&
-  echo $SIZES | grep -E '^[0-9.]+[[:space:]]' | sort -nr
+    mpv --no-video --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
+function vs()
+{
+    mpv ytdl://ytsearch:"$*"
+}
+function mm()
+{
+    url="$1"
+    shift
+    mpv --ytdl-raw-options=yes-playlist=,playlist-random= --ytdl-format=bestaudio "$url" $*
+}
+function vv()
+{
+    url="$1"
+    shift
+    mpv "--ytdl-raw-options=yes-playlist=" "$url" $*
 }

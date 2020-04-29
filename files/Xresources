@@ -1,4 +1,4 @@
-! Custom colors
+!! Custom colors
 
 ! special
 *.foreground:   #c5c8c6
@@ -10,31 +10,31 @@
 *.color8:       #373b41
 
 ! red
-*.color1:       #a54242
+*.color1:       #a52d2d
 *.color9:       #cc6666
 
 ! green
-*.color2:       #8c9440
+*.color2:       #879410
 *.color10:      #b5bd68
 
 ! yellow
-*.color3:       #de935f
+*.color3:       #de8344
 *.color11:      #f0c674
 
 ! blue
-*.color4:       #5f819d
+*.color4:       #1f649d
 *.color12:      #81a2be
 
 ! magenta
-*.color5:       #85678f
+*.color5:       #7d458f
 *.color13:      #b294bb
 
 ! cyan
-*.color6:       #5e8d87
+*.color6:       #358d82
 *.color14:      #8abeb7
 
 ! white
-*.color7:       #707880
+*.color7:       #6c7680
 *.color15:      #c5c8c6
 
 ! xterm specific
@@ -111,7 +111,8 @@ URxvt*foreground:                     #E8E6E6
 ! URxvt*pointerColor2:                  color
 ! URxvt*borderColor:                    color
 ! URxvt*iconFile:                       file
-! URxvt*font:                           fontname
+!URxvt*font:                           xft:monaco:size=10
+URxvt*font:                           xft:consolas:size=11
 ! URxvt*boldFont:                       fontname
 ! URxvt*italicFont:                     fontname
 ! URxvt*boldItalicFont:                 fontname

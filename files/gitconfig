@@ -3,7 +3,7 @@
   name = Maxence de Bergeyck
 [alias]
   st = status
-  all = log --graph --pretty=format:'\t%C(yellow)%h%Creset %C(cyan)%<|(27)%aN%Creset%s %C(auto)%d%Creset'
+  all = log --all --graph --pretty=format:'\t%C(yellow)%h%Creset %C(cyan)%<|(32)%aN%Creset%s %C(auto)%d%Creset'
 
 [color]
   ui = true

@@ -32,7 +32,7 @@ Plugin 'Rip-Rip/clang_complete'
 
 "" Vim-Latex LatexEditor for Vim
 """"""""""""""""""""""""""""""""
-Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex.git'
+Plugin 'vim-latex/vim-latex'
 
 "" Control P
 """"""""""""
@@ -117,3 +117,7 @@ imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
 " " insert mode
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Add syntax coloring to cpp template files
+autocmd BufNewFile,BufRead *.tpp set syntax=cpp
+autocmd FileType tpp setlocal smartindent shiftwidth=4 softtabstop=4
