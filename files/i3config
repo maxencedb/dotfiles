@@ -137,8 +137,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # My shortcuts
 # start i3lock
-#bindsym $mod+w exec "i3lock -u -c 000000 -i ~/img/lock.png" 
-bindsym $mod+w exec "i3lock -t -i ~/img/lock.png"
+bindsym $mod+w exec "i3lock -t -i ~/img/lock.png -c 000000"
 bindsym $mod+t exec i3-sensible-terminal
 # start firefox
 bindsym $mod+c exec "firefox"
