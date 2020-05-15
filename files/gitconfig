@@ -2,8 +2,10 @@
   email = maxence.debergeyck@gmail.com
   name = Maxence de Bergeyck
 [alias]
+  co = checkout
+  ci = commit
   st = status
-  all = log --all --graph --pretty=format:'\t%C(yellow)%h%Creset %C(cyan)%<|(32)%aN%Creset%s %C(auto)%d%Creset'
+  all = log --all --graph --pretty=format:'%C(yellow)%>|(21)%h%Creset %C(green)%>(12)%ar%Creset %C(cyan)%<(5,trunc)%aN%Creset %<|(100,trunc)%s%C(auto)%w(70,15,15)%+D%w()%Creset'
 
 [color]
   ui = true
@@ -13,3 +15,5 @@
   autocorrect = 0
 [push]
   default = simple
+[diff]
+  tool = vimdiff

@@ -29,6 +29,10 @@ for_window [class="URxvt"] border pixel 1
 # No borders in general
 default_border none
 
+# Default workspaces
+workspace 1 output HDMI-2
+workspace 10 output eDP-1
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -85,6 +89,7 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
+bindsym $mod+u sticky toggle
 
 # focus the parent container
 bindsym $mod+q focus parent
@@ -135,6 +140,18 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+agrave move container to workspace 10
 bindsym $mod+Shift+0 move container to workspace 10
 
+# move workspace to different screen
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+l move workspace to output right
+
+# move workspace to different screen (arrow keys)
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Right move workspace to output right
+
 # My shortcuts
 # start i3lock
 bindsym $mod+w exec "i3lock -t -i ~/img/lock.png -c 000000"
@@ -146,6 +163,7 @@ bindsym $mod+x exec "firefox -private-window"
 # bindsym --release $mod+less exec --no-startup-id import /tmp/latest-screenshot.png
 bindsym $mod+p exec "amixer -c 0 set Master 10+"
 bindsym $mod+o exec "amixer -c 0 set Master 10-"
+bindsym $mod+m exec "amixer -c 0 set Master toggle"
 #bindsym XF86AudioPlay exec "mpc --host tiger play"
 #bindsym XF86AudioRaiseVolume exec "mpc --host tiger volume +1"
 #bindsym XF86AudioLowerVolume exec "mpc --host tiger volume -1"

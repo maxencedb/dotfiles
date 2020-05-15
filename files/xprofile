@@ -16,6 +16,10 @@ xrdb ~/.Xresources
 # disable pesky bell
 xset -b
 
+# Enable simple copy pasting
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork & 
+
 # set background
 feh --bg-scale ~/img/wall.png
 

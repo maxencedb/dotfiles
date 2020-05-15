@@ -35,3 +35,14 @@ function vv()
     shift
     mpv "--ytdl-raw-options=yes-playlist=" "$url" $*
 }
+function dush()
+{
+    old_ifs=$IFS
+    IFS="
+"
+    for i in $(du -sL "$@" 2>/dev/null | sort -rn); do
+        echo -n $i | awk '{printf "%s", $1*1024}' | numfmt --to=iec
+        echo -n $i | awk '{for (i=2; i <= NF; i++) printf " %s", $i; print ""}'
+    done
+    IFS=$old_ifs
+}
