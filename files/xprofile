@@ -20,6 +20,9 @@ xset -b
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork & 
 
+# Enable numlock on start of X session
+numlockx &
+
 # set background
 feh --bg-scale ~/img/wall.png
 
