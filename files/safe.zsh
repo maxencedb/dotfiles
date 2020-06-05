@@ -2,7 +2,7 @@
 # zsh shell. So no poweroff aliases
 
 # Force theme
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 
 # Variables
 export EDITOR="vim"
