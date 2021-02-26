@@ -80,8 +80,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+z layout tabbed
+bindsym $mod+s layout tabbed
+#bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -97,48 +97,52 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+ampersand workspace 1
+# switch to workspace US
 bindsym $mod+1 workspace 1
-bindsym $mod+eacute workspace 2
 bindsym $mod+2 workspace 2
-bindsym $mod+quotedbl workspace 3
 bindsym $mod+3 workspace 3
-bindsym $mod+apostrophe workspace 4
 bindsym $mod+4 workspace 4
-bindsym $mod+parenleft workspace 5
 bindsym $mod+5 workspace 5
-bindsym $mod+minus workspace 6
 bindsym $mod+6 workspace 6
-bindsym $mod+egrave workspace 7
 bindsym $mod+7 workspace 7
-bindsym $mod+underscore workspace 8
 bindsym $mod+8 workspace 8
-bindsym $mod+ccedilla workspace 9
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-# move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
+# move focused container to workspace US
 bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
 bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
 bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
 bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+parenleft move container to workspace 5
 bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+minus move container to workspace 6
 bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
 bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+underscore move container to workspace 8
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
 bindsym $mod+Shift+0 move container to workspace 10
+
+# switch to workspace FR
+bindsym $mod+ampersand workspace 1
+bindsym $mod+eacute workspace 2
+bindsym $mod+quotedbl workspace 3
+bindsym $mod+apostrophe workspace 4
+bindsym $mod+parenleft workspace 5
+bindsym $mod+minus workspace 6
+bindsym $mod+egrave workspace 7
+bindsym $mod+underscore workspace 8
+bindsym $mod+ccedilla workspace 9
+
+# move focused container to workspace FR
+bindsym $mod+Shift+ampersand move container to workspace 1
+bindsym $mod+Shift+eacute move container to workspace 2
+bindsym $mod+Shift+quotedbl move container to workspace 3
+bindsym $mod+Shift+apostrophe move container to workspace 4
+bindsym $mod+Shift+parenleft move container to workspace 5
+bindsym $mod+Shift+minus move container to workspace 6
+bindsym $mod+Shift+egrave move container to workspace 7
+bindsym $mod+Shift+underscore move container to workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9
+bindsym $mod+Shift+agrave move container to workspace 10
 
 # move workspace to different screen
 bindsym $mod+Control+k move workspace to output up
@@ -154,7 +158,8 @@ bindsym $mod+Control+Right move workspace to output right
 
 # My shortcuts
 # start i3lock
-bindsym $mod+w exec "i3lock -t -i ~/img/lock.png -c 000000"
+bindsym $mod+z exec "i3lock -t -i ~/img/lock.png -c 000000"
+bindsym $mod+w exec "flameshot gui"
 bindsym $mod+t exec i3-sensible-terminal
 # start firefox
 bindsym $mod+c exec "firefox"
@@ -177,8 +182,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-bindsym $mod+u "sticky toggle"
 
 # "Back to work"
 bindsym $mod+g exec "killall -s SIGKILL mpv; killall -s SIGKILL vlc; killall -s SIGKILL chromium; killall -s SIGKILL firefox; killall -s SIGKILL tor-browser-en; killall -s SIGKILL mirage; killall -s SIGKILL flashplayer; /home/max/bin/jasmiff"

@@ -1,6 +1,3 @@
-[user]
-  email = maxence.debergeyck@gmail.com
-  name = Maxence de Bergeyck
 [alias]
   co = checkout
   ci = commit
